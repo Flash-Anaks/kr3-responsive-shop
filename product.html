@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Подробная информация о товаре 1 учебного интернет-магазина.">
+  <title>Товар 1 — Учебный интернет-магазин</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Учебный интернет-магазин — Товар 1">
+  <meta property="og:description" content="Описание и характеристики товара 1.">
+  <meta property="og:image" content="https://Flash-Anaks.github.io/kr1-html-css-shop/images/preview.png">
+</head>
+<body>
+  <header>
+    <div class="site-header">
+      <a class="site-header__logo" href="index.html">ShopProject</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">Товар</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="order.html">Заявка</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#advantages">Преимущества</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#contacts">Обратная связь</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+      <span class="breadcrumbs__current" aria-current="page">Товар 1</span>
+    </nav>
+
+    <section class="section">
+      <h1>Товар 1</h1>
+
+      <article class="product-card">
+        <div class="product-card__image-container">
+          <img
+            class="product-card__image"
+            src="images/377adab44aed2e738bd4cde7fe57b68b87d6267f4cfb_16_9.webp"
+            alt="Изображение товара 1"
+            width="640"
+            height="360"
+          >
+        </div>
+
+        <h2 class="product-card__title">Товар 1</h2>
+        <p class="product-card__description">
+          Подробное описание учебного товара для страницы карточки.
+        </p>
+        <p class="product-card__price">1000 руб.</p>
+
+        <div class="form-actions">
+          <a class="button button--primary" href="order.html">Оформить заявку</a>
+          <a class="button button--secondary" href="catalog.html">Назад в каталог</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Характеристики товара</h2>
+
+      <div class="table-wrapper">
+        <table class="product-table">
+          <caption>Характеристики товара</caption>
+          <thead>
+            <tr>
+              <th scope="col">Параметр</th>
+              <th scope="col">Значение</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Категория</th>
+              <td>Учебные товары</td>
+            </tr>
+            <tr>
+              <th scope="row">Цена</th>
+              <td>1000 руб.</td>
+            </tr>
+            <tr>
+              <th scope="row">Наличие</th>
+              <td>В наличии</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <aside class="aside-info">
+      Это учебная карточка товара. Данные используются для демонстрации структуры страницы товара.
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+    <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+  </footer>
+</body>
+</html>
