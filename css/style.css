@@ -79,16 +79,13 @@ footer {
 */
 header {
   background-color: var(--color-surface);
-  position: sticky;
-  top: 0;
-  z-index: 10;
 }
 
 img {
-  max-width: 200px;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   object-fit: contain;
-
+  display: block;
 }
 /*
   Оформляем подвал страницы тем же фоном,
@@ -297,13 +294,11 @@ a:focus-visible {
   max-width: var(--container-width);
   margin: 0 auto var(--space-xl);
   display: grid;
-  grid-template-columns: 260px 1fr;
-  grid-template-areas: "filters products";
+  grid-template-columns: 1fr;
   gap: var(--space-lg);
 }
 
 .catalog-filters {
-  grid-area: "filters";
   padding: var(--space-md);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
@@ -337,10 +332,6 @@ a:focus-visible {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   font: inherit;
-}
-
-.catalog-products {
-  grid-area: "products";
 }
 
 .products-grid {
@@ -404,9 +395,9 @@ a:focus-visible {
 
 .product-card__image-container {
   display: block;
-  width: 200px;
+  width: 100%;
   color: var(--color-border);
-  height: 150px;
+  height: auto;
 }
 /*
   Убираем лишний верхний отступ у заголовка карточки.

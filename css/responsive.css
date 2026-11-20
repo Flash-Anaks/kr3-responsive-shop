@@ -144,7 +144,6 @@ body {
   .catalog-filters {
     position: sticky;
     top: 88px;
-    order: initial;
   }
 }
 
@@ -153,6 +152,7 @@ body {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
+  object-fit: cover;
   border-radius: var(--radius-md, 8px);
 }
 
