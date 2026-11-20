@@ -13,19 +13,20 @@
   <meta property="og:image" content="https://Flash-Anaks.github.io/kr1-html-css-shop/images/preview.png">
 </head>
 <body>
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
   <header>
     <div class="site-header">
       <a class="site-header__logo" href="index.html">ShopProject</a>
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
           <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html">Главная</a>
+            <a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">Главная</a>
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link" href="catalog.html">Каталог</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">Товар</a>
+            <a class="site-nav__link" href="product.html">Товар</a>
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link" href="order.html">Заявка</a>
@@ -47,7 +48,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main" class="main">
     <section class="hero">
       <h1>Учебный интернет-магазин</h1>
       <p>
@@ -74,7 +75,7 @@
 
       <div class="products-grid">
         <article class="product-card product-card">
-          <div class="product-card__image-container"><img class="product-card__image" src="images/377adab44aed2e738bd4cde7fe57b68b87d6267f4cfb_16_9.webp" loading="lazy"></div>
+          <div class="product-card__image-container"><img class="product-card__image" src="images/377adab44aed2e738bd4cde7fe57b68b87d6267f4cfb_16_9.webp" loading="lazy" alt="Кайл"></div>
           <h3 class="product-card__title">Товар 1</h3>
           <p class="product-card__description">Краткое описание учебного товара.</p>
           <p class="product-card__price">Цена: 1000 руб.</p>
@@ -97,7 +98,7 @@
                       (max-width: 1023px) 50vw,
                       33vw"
               loading="lazy"
-              alt="Товар 2"
+              alt="Кенни"
               width="640"
               height="480"
             >
@@ -114,7 +115,7 @@
         </article>
 
         <article class="product-card">
-          <div class="product-card__image-container"><img class="product-card__image" src="images/images.jpg" loading="lazy"></div>
+          <div class="product-card__image-container"><img class="product-card__image" src="images/images.jpg" loading="lazy" alt="Стэн"></div>
           <h3 class="product-card__title">Товар 3</h3>
           <p class="product-card__description">Краткое описание учебного товара.</p>
           <p class="product-card__price">Цена: 2000 руб.</p>
