@@ -13,6 +13,7 @@
   <meta property="og:image" content="https://Flash-Anaks.github.io/kr1-html-css-shop/images/preview.png">
 </head>
 <body>
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
   <header>
     <div class="site-header">
       <a class="site-header__logo" href="index.html">ShopProject</a>
@@ -47,7 +48,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main" class="main">
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
       <a class="breadcrumbs__link" href="index.html">Главная</a>
       <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
@@ -71,7 +72,6 @@
             type="text"
             placeholder="Введите ваше имя"
             minlength="2"
-            autocomplete="given-name"
             required
           >
         </div>
@@ -84,7 +84,6 @@
             name="email"
             type="email"
             placeholder="example@mail.ru"
-            autocomplete="email"
             required
           >
         </div>
@@ -99,7 +98,6 @@
             inputmode="tel"
             placeholder="+7 (900) 000-00-00"
             pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
-            autocomplete="tel"
             required
           >
           <small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
